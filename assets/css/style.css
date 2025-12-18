@@ -928,3 +928,34 @@ button {
   color: var(--gray-color);
   font-size: 15px;
 }
+
+/* addon area style here */
+.addon_area {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.addon_area .single_addon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: #f4f6fa;
+  border-radius: 12px;
+  padding: 20px;
+}
+.addon_area .single_addon .addon_text h4 {
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: 600;
+}
+.addon_area .single_addon .addon_text span {
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+/* footer area style here */
+.footer_area {
+  margin-top: 35px;
+}

@@ -237,19 +237,36 @@ button {
 }
 .search-box select {
   border: none;
-  padding: 0 14px;
+  padding: 0 0 0 14px;
   height: 100%;
   outline: none;
   font-size: 14px;
   background: #fff;
   cursor: pointer;
+  margin-right: 12px;
 }
+
 .search-box input {
   flex: 1;
   border: none;
   outline: none;
   padding: 0 12px;
   font-size: 14px;
+  position: relative;
+}
+.search-box .select_box {
+  position: relative;
+}
+.search-box .select_box::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: var(--gray-color);
+  right: 0;
+  top: -2px;
+  bottom: 0;
+  z-index: 50;
 }
 .search-box button {
   width: 48px;
